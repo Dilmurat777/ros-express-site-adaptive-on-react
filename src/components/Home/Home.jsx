@@ -44,10 +44,11 @@ const HomePage = () => {
                 src={arrow}
                 alt="arrow"
                 animate={{ x: [null, 100, 0] }}
+                loading="lazy"
               />
             </div>
 
-            <img className="home__item-sofa" src={sofa} alt="sofa" />
+            <img className="home__item-sofa" src={sofa} alt="sofa"  loading="lazy"/>
 
             <div className="home__item-square">
               <motion.p>
@@ -73,7 +74,7 @@ const HomePage = () => {
                   transition: { duration: 1 },
                 }}
                 whileTap={{ scale: 0.9 }}>
-                <img src={youtube} alt="youtube" />
+                <img src={youtube} alt="youtube" loading="lazy"/>
               </motion.a>
               <p>
                 Узнайте <br /> больше о туре <br /> за 1 минуту
@@ -124,7 +125,7 @@ const HomePage = () => {
       </Container>
 
       <div className="home__item-svg">
-        <img className="home__item-lamp" src={lamp} alt="lamp" />
+        <img className="home__item-lamp" src={lamp} alt="lamp" loading="lazy"/>
         <motion.img
           className="home__item-light"
           src={light}
@@ -132,6 +133,7 @@ const HomePage = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 3 }}
+          loading="lazy"
         />
         <motion.img
           className="home__item-ellipse"
@@ -140,6 +142,7 @@ const HomePage = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 2 }}
+          loading="lazy"
         />
       </div>
     </section>
