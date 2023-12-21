@@ -1,5 +1,5 @@
 import Header from './components/Header/Header';
-import Home from './components/Home/Home';
+import HomePage from './components/Home/Home';
 import Orders from './components/Orders/Orders';
 import Services from './components/Services/Services';
 import './style/style.scss';
@@ -10,7 +10,7 @@ function App() {
     <>
     <Header/>
     <main className='main'>
-      <Home/>
+      <HomePage/>
       <Orders/>
       <Services/>
     </main>

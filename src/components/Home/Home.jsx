@@ -8,7 +8,7 @@ import lightLamp from '../../assets/images/light-lamp.svg';
 import light from '../../assets/images/light.svg';
 import { motion } from 'framer-motion';
 
-const componentName = () => {
+const HomePage = () => {
   return (
     <section className="home">
       <Container>
@@ -146,4 +146,4 @@ const componentName = () => {
   );
 };
 
-export default componentName;
+export default HomePage;
