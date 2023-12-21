@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@400;700&family=Oranienbaum&display=swap');
+
+$darkGreen: #010e10;
+$blue: #17868d;
+$lightGrey: #3d3d3d;
+$gold: #f0d683;
+$textGold: #e5c97b;
+$titleGold: #ecd180;
+$black: #000000;
+$darkGray: #1c1c1c;
+$border: #9f734c;
+$supperLightGrey: #767676;
+$LinearRight: linear-gradient(to right, #9f734c, #b58a59, #caa266, #debc74, #f0d683);
+$LinearLeft: linear-gradient(to right, #f0d683, #debc74, #caa266, #b58a59, #9f734c);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  // font-family: 'Oranienbaum', serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: linear-gradient(180deg, #010e0f 90.28%, rgba(1, 14, 15, 0.09) 100%);
+  background-repeat: no-repeat;
+}
+
+.main-button,
+.form-btn {
+  display: block;
+  position: relative;
+  padding: clamp(0.75rem, 0.649rem + 0.51vw, 1.125rem) 6px;
+  border-radius: 8px;
+
+  text-align: center;
+
+  font-family: 'Oranienbaum', serif;
+  font-size: 20px;
+
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: $LinearRight;
+  cursor: pointer;
+  z-index: 100;
+  color: $black;
+}
+
+.border__btn,
+.form-btn {
+  padding: clamp(0.5rem, 0.399rem + 0.45vw, 0.875rem) clamp(0.313rem, -0.042rem + 1.77vw, 1.625rem);
+  border: 2px solid $border;
+  border-radius: 8px;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Oranienbaum', serif;
+  font-weight: 400;
+  font-size: clamp(1.125rem, 0.754rem + 1.86vw, 2.5rem);
+  line-height: 1.3;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  span {
+    color: $titleGold;
+  }
+}
+
+.container {
+  max-width: 1545px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@import 'Header';
+@import 'Home';
+@import 'FormModal';
+@import 'Orders';
+@import 'Services';
+
+@media (max-width: 1150px) {
+  .main-button,
+  .form-btn {
+    font-size: 16px;
+    line-height: 14px;
+    padding: clamp(0.75rem, 0.649rem + 0.51vw, 1.125rem) 2px;
+  }
+}

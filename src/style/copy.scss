@@ -1,0 +1,125 @@
+.orders {
+  padding-top: clamp(2.5rem, -0.707rem + 16.03vw, 14.375rem);
+  max-width: 100%;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__box {
+    display: flex;
+    gap: clamp(1.563rem, -18.482rem + 27.89vw, 7.75rem);
+    margin-top: 57px;
+    margin-bottom: 94px;
+  }
+
+  &__left,
+  &__right {
+    background-color: $lightGrey;
+    max-width: clamp(26.25rem, 12.807rem + 23.33vw, 34.75rem);
+    flex-shrink: 0;
+    border-radius: 41px;
+    color: #fff;
+    padding: 20px 0 100px 0;
+    &-title,
+    &-title {
+      max-width: 444px;
+      font-size: clamp(1rem, 0.848rem + 0.69vw, 1.5rem);
+      line-height: 1.3;
+      margin: 0 auto;
+      padding: 20px auto 0;
+    }
+    &-items {
+      display: flex;
+      flex-direction: column;
+      padding: clamp(0.938rem, 0.464rem + 2.16vw, 2.5rem)
+        clamp(0.938rem, -1.336rem + 3.95vw, 2.375rem) 0
+        clamp(0.625rem, -1.747rem + 4.12vw, 2.125rem);
+      gap: clamp(0.625rem, 0.417rem + 0.95vw, 1.313rem);
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &-info {
+      display: flex;
+      gap: 10px;
+    }
+    &-text {
+      font-size: clamp(0.75rem, 0.674rem + 0.35vw, 1rem);
+      line-height: 1.3;
+    }
+
+    &-plant {
+      position: absolute;
+      left: 85px;
+      top: -370px;
+    }
+    &-sofa {
+      position: absolute;
+      left: 70px;
+      top: -250px;
+    }
+  }
+
+  &__right {
+    background-color: #fff;
+    color: #333;
+  }
+  &__contact {
+    width: 413px;
+    position: relative;
+    &-items {
+      border-radius: 200px;
+      background-color: #fff;
+      display: flex;
+      gap: 23px;
+      align-items: center;
+      position: absolute;
+      padding: 34px 34px 29px 34px;
+      left: 0;
+      bottom: -11px;
+      z-index: 10;
+    }
+    &-text {
+      color: #333;
+      line-height: 1.3;
+    }
+    &-social {
+      display: flex;
+      gap: 20px;
+      img:hover {
+        transition: all 0.4s ease;
+        transform: translateY(-5px);
+      }
+    }
+  }
+  &__right-design {
+    position: relative;
+  }
+  &__right-plant {
+    position: absolute;
+    right: 200px;
+    top: -370px;
+  }
+  &__right-sofa {
+    position: absolute;
+    right: 0px;
+    top: -246px;
+  }
+  &__right-table {
+    position: absolute;
+    right: 145px;
+    top: -151px;
+  }
+}
+
+//media
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 616px) {
+  .orders {
+    padding-top: 50px;
+  }
+}
