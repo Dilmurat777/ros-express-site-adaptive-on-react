@@ -16,26 +16,29 @@ const HomePage = () => {
           <div className="home__item-info">
             <motion.h1
               className="home__item-title"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2 }}>
+              // initial={{ opacity: 0, y: -50 }}
+              // animate={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 2 }}
+              >
               Мебельные туры <br />
               <span>с полным сопровождением</span>
             </motion.h1>
             <motion.p
               className="home__item-text"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.8 }}>
+              // initial={{ opacity: 0, y: -50 }}
+              // animate={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 1.8 }}
+              >
               <span>Экономия до 500% </span> по сравнению <br /> с заказами из Европы и РФ
             </motion.p>
             <Button>забронировать тур</Button>
             <div className="home__item-reserver">
               <motion.p
                 className="home__item-small"
-                initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.5 }}>
+                // initial={{ opacity: 0, y: -50 }}
+                // animate={{ opacity: 1, y: 0 }}
+                // transition={{ duration: 1.5 }}
+                >
                 Выбирайте для себя лучшее. <br />
                 Отправляйтесь в невероятное мебельное <br /> путешествие в Китай с нами!
               </motion.p>
@@ -84,38 +87,43 @@ const HomePage = () => {
             <div className="home__item-box">
               <div className="home__item-exp">
                 <motion.div
-                  initial={{ opacity: 0, y: -50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1.5 }}
-                  viewport={{ once: true }}>
+                  // initial={{ opacity: 0, y: -50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 1.5 }}
+                  // viewport={{ once: true }}
+                  >
                   15+ <br /> <p>лет опыта в мебельных турах</p>
                 </motion.div>
                 <motion.div
-                  initial={{ opacity: 0, y: -50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1.5 }}
-                  viewport={{ once: true }}>
+                  // initial={{ opacity: 0, y: -50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 1.5 }}
+                  // viewport={{ once: true }}
+                  >
                   700+ <br /> <p>доставленных контейнеров</p>
                 </motion.div>
                 <motion.div
-                  initial={{ opacity: 0, y: -50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1.5 }}
-                  viewport={{ once: true }}>
+                  // initial={{ opacity: 0, y: -50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 1.5 }}
+                  // viewport={{ once: true }}
+                  >
                   2+ <br /> <p>млрд руб. сэкономили клиентам на покупке мебели</p>
                 </motion.div>
                 <motion.div
-                  initial={{ opacity: 0, y: -50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1.5 }}
-                  viewport={{ once: true }}>
+                  // initial={{ opacity: 0, y: -50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 1.5 }}
+                  // viewport={{ once: true }}
+                  >
                   15+ <br /> <p>15 опытных сотрудников в России</p>
                 </motion.div>
                 <motion.div
-                  initial={{ opacity: 0, y: -50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1.5 }}
-                  viewport={{ once: true }}>
+                  // initial={{ opacity: 0, y: -50 }}
+                  // whileInView={{ opacity: 1, y: 0 }}
+                  // transition={{ duration: 1.5 }}
+                  // viewport={{ once: true }}
+                  >
                   10+ <br /> <p>10 штатных сотрудников в Китае</p>
                 </motion.div>
               </div>
@@ -130,18 +138,18 @@ const HomePage = () => {
           className="home__item-light"
           src={light}
           alt="lamp"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 3 }}
+          // initial={{ opacity: 0 }}
+          // animate={{ opacity: 1 }}
+          // transition={{ duration: 3 }}
           loading="lazy"
         />
         <motion.img
           className="home__item-ellipse"
           src={lightLamp}
           alt="lamp"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
+          // initial={{ opacity: 0 }}
+          // animate={{ opacity: 1 }}
+          // transition={{ duration: 1, delay: 2 }}
           loading="lazy"
         />
       </div>
